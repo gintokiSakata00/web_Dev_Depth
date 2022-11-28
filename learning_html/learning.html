@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learnings</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+
+        .parag{
+            width: 70%;
+            margin: auto;
+            text-align: justify;
+            text-indent: 50px;
+        }
+
+
+        .typesparag{
+            margin: auto;
+            width: 120px;
+            text-align: center;
+        }
+        .typesparag p{
+            display: flex;
+           
+        }
+
+        .table{
+            margin: auto;
+            border: 1px dotted black;
+            border-collapse: collapse;
+        }
+        .table th,td{
+            border: 1px dotted black;
+        }
+
+        .list,.list2{
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            
+        }
+        .definelist{
+            display: flex;
+            margin: auto;
+            justify-content: center;
+        }
+        .division{
+            width: 150px;
+            height: 50px;
+            margin: auto;
+        }
+
+        .text{
+            padding: 10px;
+            background-color: gray;
+            border-radius: 25px;
+        }
+
+        .division .main{
+            text-align: center;
+            color: white;
+        }
+
+
+        .myiframe{
+        position: relative;
+           top: 200px;
+           margin: auto;
+           justify-content: center;
+           text-align: center;
+        }
+        .myiframe iframe{
+            width: 400px;
+            height: 700px;
+            border: none;
+        }
+        .myiframe button{
+            height: 50px;
+            width: 100px;
+            border-radius: 25px;
+            border: none;
+            color: gray;
+
+        }
+        
+        .container{
+          
+            height:50px;
+            background-color: gray;
+            position: relative;
+            top: 200px;
+            margin: auto;
+            justify-content: center;
+            text-align: center;
+            float: left;
+       
+        }
+
+        .left{
+            width: 20%;
+            border-bottom-left-radius: 25px;
+            border-top-left-radius: 25px;
+        }
+        .middle{
+            width: 20%;
+          
+        }
+        .right{
+            width: 20%;
+            border-bottom-right-radius: 25px;
+            border-top-right-radius: 25px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .left,.middle,.right{
+                
+                width:100%;
+                margin: auto;
+            }
+        }
+
+        .compcode{
+            position: relative;
+            top: 200px;
+        }
+
+
+        .newtab{
+            position: relative;
+            top: 200px;
+            margin: auto;
+            display: flex;
+            width: 150px;
+        }
+        .allinputs{
+            
+            position: relative;
+            top: 200px;
+            margin: auto;
+            width: 180px;
+            height: 760px;
+            padding: 20px;
+           
+        }
+        
+        .allinputs input{
+            margin-bottom: 10px;
+        }
+        
+
+        #canvas{
+            position: relative;
+            top: 250px;
+            display: flex; 
+            margin: auto;
+            border: 1px solid white;
+        }
+
+        .mediaquery{
+           position: relative;
+           top: 100px;
+            width: 350px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Learnings</h1>
+    <p class="parag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+        molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+        numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+        optio, eaque rerum! Provident similique accusantium nemo autem.</p>
+     
+    <div class="typesparag">
+        <b>what the fuck</b>
+        <i>what the fuck</i>
+        <q>what the fuck</q>
+    </div>   
+    <table class="table">
+        <tr>
+            <th>name</th>
+            <th>age</th>
+            <th>gender</th>
+            <th width="40%" colspan="2">Status</th>
+            
+        </tr>
+        <tr>
+            <td>Gillbert</td>
+            <td>0</td>
+            <td>0</td>
+            <td>taken</td>
+            <td>not single</td>
+        </tr>
+        <tr>
+            <td>Padon</td>
+            <td>1</td>
+            <td>1</td>
+            <td>what the fuck</td>
+        </tr>
+    </table>
+    <br>
+    <table class="table">
+       <tr>
+        <th>NAME</th>
+        <td>ellenaj</td>
+        <td>lineth</td>
+       </tr>
+       <tr>
+        <th>AGE</th>
+        <td>32</td>
+        <td>32</td>
+       </tr>
+       <tr>
+        <th>GENDER</th>
+        <td>female</td>
+        <td>female</td>
+       </tr>
+    </table>
+
+    <div class="list">
+        <ol>
+            <li >what</li>
+            <li >the</li>
+            <li >fuck</li>
+        </ol>
+        <ul>
+            <li>what</li>
+            <li>the</li>
+            <li>hell</li>
+            <ul>
+                <li>cold hell</li>
+                <li>hot hell</li>
+            </ul>
+        </ul>
+
+    </div>
+    <div class="list2">
+        
+        
+        <ol type="I">
+            <li>what</li>
+            <ol start="10">
+                <li>what 1</li>
+                <li>what 2</li>
+            </ol>
+            <li>the</li>
+            <li>hell</li>
+            <ol type="a">
+                <li>cold hell</li>
+                <li>hot hell</li>
+            </ol>
+        </ol>
+        <ul>
+            <li style="list-style-type: square;">what</li>
+            <li style="list-style-type: disc;">the</li>
+            <li style="list-style-type: circle;">fuck</li>
+        </ul>
+        
+
+    </div>
+    <div class="definelist">
+        <dl>
+            <dt>Frontend</dt>
+            <dd><b>React js </b>  and <b> next js</b></dd>
+            <dt>Backend</dt>
+            <dd>Use <b>nodejs</b> for backend</dd>
+            <dt>Database</dt>
+            <dd>Use <b>mongodb</b> for database</dd>
+        </dl>
+    </div>
+    <div class="division">
+        <p class="text main">MAIN TEXT</p>
+        <p>same class name can enherit attributes</p>
+        <p class="text">TEXT 1</p>
+        <p class="text">TEXT 2</p>
+    </div>
+
+    
+    <div class="myiframe">
+    <button onclick="index()">SHOW HTML</button>
+    <div id="indexMode"  style="display: none;">
+        <iframe src="index.html" frameborder="0"></iframe>
+    </div>
+</div>
+
+<div style="box-sizing: border-box;">
+    <div class="container left"><p>this is left</p></div>
+    <div class="container middle"><p>this is middle</p></div>
+    <div class="container right"><p>this is right</p></div>
+</div>
+
+<br><br><br><br><br>
+<div class="compcode" style="margin:auto; text-align:center;">
+    <hr>
+    <p>computer code below</p>
+    <p>this is a keyboard <kbd>ctrl + s</kbd></p>
+    <code >
+        <pre>
+        x = 5
+        y = 10
+        z = x + y
+        print(z)
+       <samp> #output 15</samp>
+    </pre>
+   
+    <article>
+        <h2>WHAT THE FUCK</h2>
+        <p>the world is full of crap</p>
+    </article>
+    <section>
+        <h2>CANNOT AGREE MORE MF</h2>
+        <p>the less crap are those lazy</p>
+        <p>&copy</p>
+        <p>&quot</p>
+        <p>&gt</p>
+        <p>&lt</p>
+    </section>
+    
+</div>
+
+<div class="newtab" >
+
+    <form action="" method="get" novalidate>
+        <label for="user">input text</label>
+        <input type="text" name="user">
+        <label for="pass">input password</label>
+        <input type="password" name="pass">
+        <input type="submit" value="Submit">    
+        
+  
+    </form>
+</div>
+<div class="allinputs">
+    <label for="button">button</label>
+    <input type="button" name="button" value="button"> <br>
+    <label for="checkbox">checkbox</label><br>
+    <input type="checkbox" name="checkbox">
+    <label for="color">color</label>
+    <input type="color" name="color"><br>
+    <label for="date">date</label>
+    <input type="date" name="date">
+    <label for="datetime">datetime</label>
+    <input type="datetime-local" name="datetime">
+    <label for="email">email</label>
+    <input type="email" name="email">
+    <label for="file">file</label>
+    <input type="file" name="file">
+    <label for="image">image</label>
+    <input type="image" name="image">number
+    <label for="month">month</label>
+    <input type="month" name="month">
+    <label for="number">number</label>
+    <input type="number" name="number">
+    <label for="password">password</label>
+    <input type="password" name="password">
+    <label for="radio">radio</label>
+    <input type="radio" name="radio"><br>
+    <label for="range">range</label>
+    <input type="range" name="range">
+    <label for="reset">reset</label>
+    <input type="reset" name="reset"><br>
+    <label for="search">search</label>
+    <input type="search" name="search"><br>
+    <label for="submit">submit</label>
+    <input type="submit" name="submit"><br>
+    <label for="tel">tel</label>
+    <input type="tel" name="tel">
+    <label for="text">text</label>
+    <input type="text" name="text">
+    <label for="time">time</label>
+    <input type="time" name="time"><br>
+    <label for="url">url</label>
+    <input type="url" name="url">
+    <label for="week">week</label>
+    <input type="week" name="week">
+</div>
+<div style="position: relative; top:200px; margin:auto; text-align:center">
+    <br><br>
+    <label for="what">SsizeCT ANIME</label>
+    <select name="what" id="what">
+        <option value="">ssizect one</option>
+        <option value="onepiece">One piece</option>
+        <option value="oneouts" ssizected>One outs</option>
+        <optgroup label="hentai">
+            <option value="">milf</option>
+            <option value="">adul</option>
+        </optgroup>
+    </select>
+    <br>
+    <fieldset>
+        <legend>WHAT THE FUCK</legend>
+    <label for="hell">multiple category</label>
+    <select name="hell" id="" size="2" multiple> 
+        <option value="">ssizect cat</option>
+        <option value="hentai">hentai</option>
+        <option value="fiction">fiction</option>
+        <option value="action">action</option>
+    </select>
+    <br>
+    <textarea name="what" id="what" cols="30" rows="10">
+    
+    </textarea>
+</fieldset>
+
+    <form action="">
+        <fieldset>
+            <legend>this is datalist</legend>
+            <label for="anime">anime</label>
+            <input list="anime" name="anime">
+            <datalist id="anime">
+                <option value="">ssizect anime</option>
+                <option value="anime1">anime1</option>
+                <option value="anime2">anime2</option>
+                <option value="anime3">anime3</option>
+                <option value="anime4">anime4</option>
+            </datalist>
+        </fieldset>
+    </form>
+
+</div>
+<canvas id="canvas" width="300" height="300">
+</canvas>
+
+<svg width="200" height="200">
+    <rect width="200" height="200" style="fill:red; stroke:white;"></rect>
+</svg>
+<svg width="100" height="100">
+    <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+  </svg>
+
+  <div class="mediaquery">
+    <button onclick="playpause()"><div id="play">Play</div></button>
+    <input type="radio" name="size" value="1">SMALL
+    <input type="radio" name="size" value="2">MEDIUM
+    <input type="radio" name="size" value="3">LARGE
+    <button type="button" onclick="displayRadioValue()">
+        Submit
+    </button>
+  
+        <video id="video" height="300px" width="400px" >
+            <source src="./component/videos/NOBITA - IKAW LANG (Lyrics).mp4"  type="video/mp4">
+        </video>
+
+        <audio controls src="./component/videos/Y2Mate.is - NOBITA - IKAW LANG (Lyrics)-Xb85Sz28S8Q-160k-1654917521940.mp3" ></audio>
+
+    </div>
+   
+   <embed src="footer.html" type="">
+
+    <iframe width="552" height="311" src="https://www.youtube.com/embed/Xb85Sz28S8Q?mute=0&autoplay=0&controls=0" title="NOBITA - IKAW LANG (Lyrics)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <script>
+      
+        var video = document.getElementById("video");
+        var size = document.getElementById("radio");
+        function playpause(){
+            if(video.paused){
+                video.play();
+            }else{
+                video.pause();
+            }
+        }
+        function size(){
+            if(size==1){
+                video.width=200;
+            }else if (size==2){
+                video.width=300;
+            }else{
+                video.width=300;
+            }
+        }
+        function displayRadioValue() {
+            var size = document.getElementsByName('size');
+              
+            for(i = 0; i < size.length; i++) {
+                if(size[i].checked)
+                if(size[i].value=="1"){
+                    video.width=200;
+                }else if(size[i].value=="2"){
+                    video.width=400;
+                }else{
+                    video.width=600;
+                }
+            }
+        }
+
+        function index()
+        {
+            var index = document.getsizementById("indexMode");
+        if(index.style.display ==="none"){
+            index.style.display= "block";
+        }else{
+            index.style.display= "none";
+        }
+        }
+    </script>
+</body>
+</html>
