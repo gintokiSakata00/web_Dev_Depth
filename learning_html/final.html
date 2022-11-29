@@ -17,7 +17,7 @@
         .parag{
             width:270px;
             height: 340px;
-            border: 1px solid white;
+            border: 1px solid black;
             padding: 20px;
             margin-left: 5px;
             margin-top: 5px;
@@ -36,7 +36,7 @@
         .addData{
             width:270px;
             height: 340px;
-            border: 1px dotted white;
+            border: 1px dotted black;
             margin-left: 5px;
             margin-top: 5px;
             padding: 20px;
@@ -55,6 +55,8 @@
             height: 30px;
             border-radius: 25px;
             text-align: center;
+            background: white;
+            border: 1px dotted black;
         }
 
         .agejob input{
@@ -75,7 +77,7 @@
         }
         .oldTable tr,td,th,table{
             padding: 10px;
-            border: 1px dotted white;
+            border: 1px dotted black;
             border-collapse: collapse;
         }
 
@@ -87,17 +89,20 @@
             margin: auto;
             justify-content: center;
             border-radius: 25px;
-            height: 30px;
+            height: 40px;
             width: 100px;
+            background-color: white;
+            border: 1px dotted black;
+            padding: 10px;
         }
 
         .list{
             width:270px;
             height: 340px;
-            border: 1px dotted white;
+            border: 1px dotted black;
             padding: 20px;
             margin-top: 5px;
-            
+            margin-left: 10px;
         }
         
         .list h1{
@@ -127,19 +132,22 @@
             margin: auto;
             width: 300px;
             height: 400px;
-            border: 1px dotted white;
+            border: 1px dotted black;
         }
 
         .code h3{
             text-align: center;
         }
 
+        .fieldset{
+            position: relative;
+            top: -6px;
+        }
         .fieldset fieldset{
             margin: auto;
-            padding: 20px;
-            border: 1px dotted white;
-            width: 260px;
-            height: 400px;
+            border: 1px dotted black;
+            width: 300px;
+            height: 390px;
            
         }
         
@@ -147,7 +155,6 @@
         .inputs{
             margin: auto;
             padding: 20px;
-            border: 1px dotted white;
             width: 200px;
         }
         .inputs input, .inputs select{
@@ -163,12 +170,40 @@
             justify-content:center ;
             font-size: 15px;
         }
+
+        .summaries{
+            margin: auto;
+            width: 260px;
+            height: 100%;
+            border: 1px dotted black;
+            padding: 20px;
+            position: relative;
+            top: 10px;
+        }
+        .summaries h1{
+            font-size: 30px;
+        }
+
+        .summaries p {
+            text-align: justify;
+            text-indent: 30px;
+        }
+        
+        .media{
+            margin: auto;
+            text-align: center;
+        }
+        
       
     </style>
 </head>
 <body>
+    <div style="margin: auto; text-align:center; ">
+
+        <embed src="navbar.html"  type="text/html" >
+        </div>
     <div class="headings">
-        <div class="parag">
+        <div class="parag" id="text">
             <h1>LEARNING HTML</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem.</p>
             <div class="text_whatthefuck">
@@ -263,17 +298,17 @@
            
          </div>
         </div>
-         <div class="pictures">
-            <img src="./component/images/img1.jpg" alt="">
-            <img src="./component/images/img2.jpg" alt="">
-            <img src="./component/images/img3.jpg" alt="">
-            <img src="./component/images/img4.jpg" alt="">
+         <div class="pictures" id="image">
+            <img src="../component/images/img1.jpg" alt="">
+            <img src="../component/images/img2.jpg" alt="">
+            <img src="../component/images/img3.jpg" alt="">
+            <img src="../component/images/img4.jpg" alt="">
            
         </div>
+    </div>
 
-
-        <div class="bodies">
-        <div class="code">
+        <div class="headings">
+        <div class="code" id="code">
             <h3>Javascript Code</h3>
             
           
@@ -335,9 +370,41 @@
         </fieldset>
     </div>
     
+    <div class="summaries">
+        <h1>Detailed Summary</h1>
+        <details>
+            <summary>Frontend Development</summary>
+            <p> Learn the fundamentals of html and css. Javascript on the other hand must be fully mastered.</p>
+        </details>
+        <details>
+            <summary>Backend Development</summary>
+            <p>Learn depth javascript and use framework such as Node Js for implementend backend</p>
+            <p>Php is an optional but a must to learn programming language</p>
+        </details>
+        <details>
+            <summary>Database</summary>
+            <p>A lot of database we could chose to but for the sake of career learn MongoDB for python and learn node js for javascript</p>
+            <p>Mysql is an optional database but also crucial for startups</p>
+        </details>
+        <details>
+            <summary>Other Perks</summary>
+            <p>Programming such as R, Java, and Python were still usable for other projects and freelancing</p>
+        </details>
+    </div>
     
 </div>
 
+    <div class="media" id="media">
+       <video  width="300px" height="300px" autoplay muted controls>
+        <source src="../component/videos/NOBITA - IKAW LANG (Lyrics).mp4" alt="this is a video">
+       </video>
+       <audio controls src="../component/videos/ikawlang_song.mp3" ></audio>
+    </div>
+
+
+ 
+        <embed src="footer.html" type="text/html" width="100%" height="100%" style="overflow: hidden;">
+    
     <script>
         function addDataforOldTable(){
             var tableRow = document.getElementById("oldtable").rows.length;
@@ -348,14 +415,12 @@
                 var td4 = document.getElementById("job").value;
                 var table = document.getElementById("oldtable");
                 var row = table.insertRow(tableRow);
-                var cell1 = row.insertCell(0)
-                var cell2 = row.insertCell(1)
-                var cell3 = row.insertCell(2)
-                var cell4 = row.insertCell(3)
-                cell1.innerHTML = td1;
-                cell2.innerHTML = td2;
-                cell3.innerHTML = td3;
-                cell4.innerHTML = td4;
+                var cell1 = row.insertCell(0).innerHTML = td1;
+                var cell2 = row.insertCell(1).innerHTML = td2;
+                var cell3 = row.insertCell(2).innerHTML = td3;
+                var cell4 = row.insertCell(3).innerHTML = td4;
+               
+             
                 
             }else{
                 window.alert("Max table ROW, Must only 9 rows")
