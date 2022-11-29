@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.container{
+  display: flex;
+  box-sizing: border-box;
+  
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+.foot ul{
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.foot {
+    width: 300px;
+    margin-left: 20px;
+}

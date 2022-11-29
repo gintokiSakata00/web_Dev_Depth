@@ -1,0 +1,28 @@
+body{
+    overflow: hidden;
+    margin: 0;
+}
+.navbarko{
+    background-color: white;
+    color: black;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+.navbarko a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+.navbarko li{
+   list-style-type: none;
+   padding: 10px;
+   
+}
+.navbarko li:hover{
+    background-color: black;
+    color: white;
+}
